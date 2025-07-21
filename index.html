@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mineforce Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+      animation: fadeInDown 1s ease-out;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      animation: fadeInUp 1s ease-out;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      border: 2px solid white;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: background 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background: white;
+      color: black;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .glow {
+      text-shadow: 0 0 10px white;
+      animation: glowAnim 2s infinite alternate;
+    }
+    @keyframes glowAnim {
+      from { text-shadow: 0 0 5px white; }
+      to { text-shadow: 0 0 20px white; }
+    }
+  </style>
+</head>
+<body>
+  <header class="glow">
+    MINEFORCE SERVER
+  </header>
+  <section>
+    <p style="font-size: 1.2rem;">
+      Добро пожаловать на сайт сервера Minecraft — Mineforce!<br>
+      бла бла бла чет там бла бла бла
+    </p>
+    <a class="button" href="https://t.me/mineforcenovosti" target="_blank">Наш Telegram</a>
+  </section>
+  <footer>
+    &copy; 2025 Mineforce. Все права не защищены.
+  </footer>
+</body>
+</html>
